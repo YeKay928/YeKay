@@ -1,0 +1,8 @@
+/* MyWeb.css */
+#header{width: 984px;height: 800px;}
+body{width: 984px;height: 800px;padding: 2px;margin: 0 auto;}
+#main{width: 984px;height: 250px;border-bottom: 5px ridge #DEDEDE;background-color: red;}
+#left{width: 240px;height: 200px;background: #EEFFDD;float: left;border-right: 10px solid #FFFFFF;}
+#center{width: 466px;height: 200px;float: left;background: #EEFFDD;border-right:5px solid #FFFFFF;}
+#right{width: 263px;height: 200px;background: #EEFFDD;float: right;}
+#footer p{margin-top: 20px;text-align: center;color: #333333;}

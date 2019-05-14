@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网页</title>
+			<style type="text/css">
+				*{margin: 0;padding: 0;}
+				body{background-attachment: fixed;background-repeat: no-repeat;}
+				.top{width: 100%;height: 180px;background: red;}
+				.top .a{width: 100%;height: 38px;background: blue;}
+				.top .a .b{width: 80%;height: 100%;background: green;margin: 0 auto;}
+				.top .a .b .le ul{width: 50%;display: inline-block;float: left;}
+				.top .a .b .le ul li{width: 10%;height: 100%;border: 1px solid #000;background: yellow;float: left;
+								list-style: none;line-height: 38px;text-align: center;
+								font-size: 16px;font-family: "微软雅黑";font-weight: 900;}
+				.top .a .b .ri ul{width: 50%;display: inline-block;float: right;}
+				.top .a .b .ri ul li{width: 10%;height: 100%;border: 1px solid #000;background: yellow;float: right;
+								list-style: none;line-height: 38px;text-align: center;
+								font-size: 16px;font-family: "微软雅黑";font-weight: 900;}
+				.nav{width: 80%;width: 80%;height: 38px;background: green;margin: 0 auto;text-align: center;position: relative; z-index: 1;}
+				.nav ul{width: 100%;background: black;margin: 0 auto; padding: 0px;display: inline-block}
+				.nav ul li{width:5%;height: 30px;background: yellow;float: left;
+						display: inline;list-style: none;line-height: 38px;text-align: center;
+						font-size: 16px;font-family: "微软雅黑";font-weight: 900;}
+				.nav ul li a{color: #FFF;text-decoration: none;display: block;background: yellow;
+							line-height: 29px;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+				.nav ul li ul{width: 100%;background: #000000;visibility: hidden;}
+				.nav ul li ul li{width: 100%;height: 25px;}
+				.nav ul li ul li a{background: #666;line-height: 24px;}
+				.nav ul li a:hover{background: #666;border-bottom: 1px dashed #FF0000;}
+				.nav ul li:hover ul{visibility: visible;}
+				.nav ul li ul li a:hover{background: #333;}
+				.main{width: 80%;height: 450px;background: red;margin: 0 auto;margin-top: 30px;position: relative;z-index: 0;}
+				.main .left{width: 75%;height: 440px;background: yellow;float: left;}
+				.main .right{width: 25%;height: 440px;background: black;float: right;}
+				.main .left ul li{width: 200px;height: 115px;border: 8px solid #FFF;border-top: 20px solid #FFF;border-bottom: 20px solid #FFF;margin-top: 30px;background: yellow;float: left;
+								list-style: none;line-height: 38px;text-align: center;
+								font-size: 16px;font-family: "微软雅黑";font-weight: 900;}
+				.main .left ul li a{text-decoration: none;}								
+				.main .left ul li img{width: 100%;height: 100%;border-radius: 15px;}
+				.footer p{margin-top: 20px;text-align: center;color: #333333;}
+				.huojian{width: 3%;height: 100%;background: #FF00FF;position:fixed;right: 10px; top: 10px;z-index: 1;}
+				.huojian ul{position: absolute;}
+				.huojian ul li{width: 100%;height: 38px;border: 1px solid #000;background: yellow;float: left;
+								list-style: none;line-height: 50px;text-align: center;
+								font-size: 16px;font-family: "微软雅黑";font-weight: 900;}
+				.play{width: 75%;height: 500px;background: red;margin: 0 auto;position: relative;overflow: hidden;}
+				.play .list ul{width: 200px;height: 30px;background: green;position: absolute;bottom: 20px;right: 0px;}
+				.play .list ul li{float: left;width: 20px;height: 20px;border: 1px solid #FFF;border-radius: 10px;list-style: none;
+								line-height: 20px;text-align: center;margin-left: 10px;}
+				.active{background: #FFF;}
+			</style>
+	</head>
+	<body background="img/海贼王1.jpg">
+		<div class="huojian">
+			<ul style="float: left;">
+				<li><a href="">1</a></li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+				<li>15</li>
+				<li>16</li>
+				<li>17</li>
+				<li>18</li>
+				<li>19</li>
+				<li>20</li>
+			</ul>
+		</div>
+		<div class="top">
+			<div class="a">
+				<div class="b">
+					<div class="le">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+					<div class="ri">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">2</a>
+					<ul>
+						<li><a href="#">一</a></li>
+						<li><a href="#">二</a></li>
+						<li><a href="#">三</a></li>
+						<li><a href="#">四</a></li>
+					</ul>
+				</li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li><a href="#">11</a></li>
+				<li><a href="#">12</a></li>
+				<li><a href="#">13</a></li>
+				<li><a href="#">14</a></li>
+				<li><a href="#">15</a></li>
+				<li><a href="#">16</a></li>
+				<li><a href="#">17</a></li>
+				<li><a href="#">18</a></li>
+				<li><a href="#">19</a></li>
+				<li><a href="#">20</a></li>
+			</ul>	
+		</div>
+		<div class="play">
+			<div class="pic">
+				<img src="img/KDA伊芙琳.jpg" width=100% height=500px/>
+				<img src="img/KDA卡莎.jpg" width=100% height=500px/>
+				<img src="img/KDA阿狸.jpg" width=100% height=500px/>
+				<img src="img/KDA阿卡丽.jpg" width=100% height=500px/>
+				<img src="img/IG.png" width=100% height=500px/>
+			</div>
+			<div class="list">
+				<ul>
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				<ul>
+					<a href="http://www.baidu.com"><li><img src="img/KDA伊芙琳.jpg" />百度一下，你就知道。</li></a>
+					<li><a href="http://www.baidu.com"><img src="img/KDA卡莎.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/KDA阿狸.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/KDA阿卡丽.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/源计划-VN.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/源计划-剑姬.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/源计划-劫.jpg" /></a>百度一下，你就知道。</li>
+					<li><a href="http://www.baidu.com"><img src="img/源计划-奥巴马.jpg" />百度一下，你就知道。</a></li>
+					<li><a href="http://www.baidu.com"><img src="img/源计划-艾克.jpg" />百度一下，你就知道。</a></li>
+					<li><a href="http://www.baidu.com"><img src="img/IG.png" />百度一下，你就知道。</a></li>
+				</ul>
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+       <div class="main">
+			<div class="left">
+				<dl>
+		        	<dt>联系客服人员</dt>
+		        		<dd>邮箱:1729775377@qq.com</dd>
+		        		<dd>周一至周五 9:00-22:00</dd>
+		        	<dt>联系电话</dt>
+		        		<dd></dd>
+		        </dl>
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+		<!--
+        	作者：970145249@qq.com
+        	时间：2018-10-01
+        	描述：
+        	<marquee bgcolor="whitesmoke" width="300px" height="100px" hspace="100" hspace="100" loop="5"><h3>欢迎来到全网最大的同性交流平台</h3></marquee>
+     -->
+		<div class="footer">
+			<p>工作室 Copyright &copy;2018-2118</p>
+		</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+//		alert(2222);
+	$(".play .list ul li").mouseover(function(){
+		clearInterval(timeplay); //清除计时器
+		index=$(this).index();
+//		alert(index);
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".play .pic img").eq(index).show().siblings(".play .pic img").hide();
+	}).mouseout(function(){
+		aa();
+	});
+	aa();
+	function aa(){
+		var time=0;
+		timeplay=setInterval(function(){
+			time++;
+			if(time<5){
+				$(".play ul li").eq(time).addClass("active").siblings().removeClass("active");
+				$(".play .pic img").eq(time).show().siblings("img").hide();
+			}
+			else
+			{
+				time=-1;
+			}
+		},5000);
+	}
+	</script>
+	</body>
+</html>
