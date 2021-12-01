@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>考试管理系统</title>
+    <link type="text/css" href="css/login.css">
+    <style>
+        body,div,form,input,textarea,p {
+            margin:0px;
+            padding:0px;
+            font-size:13px;
+        }
+        a {
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        body{
+            background: linear-gradient(to bottom, #19778c, #095f88);
+            background-size:1400% 300%;
+        }
+
+        #main{
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+        }
+        #main #content{
+            width: 80%;
+            height: 100%;
+            margin: 10% auto 0;
+        }
+        #main #content form{
+            width: 35%;
+            height: 115%;
+            margin: -80px auto;
+            background: linear-gradient(#13a1fc, #13a1fc) left top, linear-gradient(#13a1fc, #13a1fc) left top,
+            linear-gradient(#13a1fc, #13a1fc) right top, linear-gradient(#13a1fc, #13a1fc) right top,
+            linear-gradient(#13a1fc, #13a1fc) left bottom, linear-gradient(#13a1fc, #13a1fc) left bottom,
+            linear-gradient(#13a1fc, #13a1fc) right bottom, linear-gradient(#13a1fc, #13a1fc) right bottom;
+            background-repeat: no-repeat;
+            background-size: 3px 20px, 20px 3px;
+        }
+        #main #content form span{
+            font-size: 36px;
+            margin-left: 40%;
+            color: #ffffff;
+        }
+
+
+        #main #content form .username{
+            width: 80%;
+            height: 40px;
+            margin-left: 35px;
+            margin-top: 25px;
+        }
+
+        #main #content form .password{
+            width: 80%;
+            height: 40px;
+            margin-left: 35px;
+            margin-top: 25px;
+        }
+
+        #main #content form .check_code{
+            width: 60%;
+            height: 40px;
+            margin-left: 35px;
+            margin-top: 25px;
+        }
+
+        #main #content form .radio_bt{
+            width: 80%;
+            margin: 20px auto 0;
+        }
+
+        #main #content form .radio_bt input{
+            margin-left: 25px;
+        }
+        #main #content form .sub{
+            width: 80%;
+            margin-left: 35px;
+            margin-top: 25px;
+        }
+        #main #content form .sub .btn1{
+            width:40%;
+            height:27px;
+            line-height:27px;
+            color:#000000;
+            text-decoration:none;
+            font-weight:bold;
+            border: none;
+            cursor: pointer;
+            float: left;
+        }
+        #main #content form .sub .btn2{
+            width:40%;
+            height:27px;
+            line-height:27px;
+            color:#000000;
+            text-decoration:none;
+            font-weight:bold;
+            border: none;
+            cursor: pointer;
+            float: left;
+            margin-left: 20%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="content">
+        <form th:name="register" action="/register" >
+            <span>注册</span><br>
+            <input class="username" th:name="user_id" id="user_id" type="text" placeholder="请输入身份证"><br>
+            <input class="username" th:name="user_name" id="user_name" type="text" placeholder="请输入名字"><br>
+            <input class="password" th:name="user_pwd" id="user_pwd" type="password" placeholder="请输入密码"><br>
+            <input class="username" th:name="user_sex" id="user_sex" type="text" placeholder="请输入性别"><br>
+            <input class="username" th:name="user_age" id="user_age" type="text" placeholder="请输入年龄"><br>
+            <input class="username" th:name="user_phone" id="user_phone" type="text" placeholder="请输入手机号码"><br>
+            <div class="radio_bt">
+                <input type="radio" value="1" th:name="lander" checked="checked"/>考生
+                <input type="radio" value="2" th:name="lander"/>考务
+            </div>
+            <div class="sub">
+                <input class="btn1" type="button" value="登陆" id="bt_log" onclick="log()"/>
+                <input class="btn2" type="submit" value="注册" id="bt_reg"  />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    function log() {
+        document.location.href='login';
+    }
+</script>
+</html>
